@@ -1,0 +1,48 @@
+.blog {
+  padding: 36px 0;
+  background: #ededed;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      & > a {
+        margin-bottom: 22px;
+        background: #fff;
+        cursor: pointer;
+        text-decoration: none;
+        display: block;
+        color: #333;
+        position: relative;
+        transition: padding 0.15s cubic-bezier(0.4, 0, 0.2, 1),margin 0.15s cubic-bezier(0.4, 0, 0.2, 1),box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover {
+          box-shadow: 0 29.5px 70px -24.5px rgba(0,0,0,0.2);
+          z-index: 100;
+        }
+        .header {
+          h4 {
+            margin: 0 !important;
+            font-weight: 400;
+            &:first-child {
+              color: #56cbc2;
+            }
+          }
+          padding-bottom: 21px;
+        }
+        .image {
+          background: #333;
+          height: 273px;
+        }
+        .text {
+          padding: 24px 28px;
+          .content {
+            h2 {
+              font-size: 29px;
+              line-height: 1.2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
